@@ -1,0 +1,22 @@
+#ignore the following directories:
+*.app/
+build/
+Docs/html/
+xcuserdata/
+xcuserdatad/
+.svn/
+xcuserdata/
+xcuserdatad/
+
+#ignore the following files:
+.*
+*.a
+*.fwbackup
+*.mode*
+*.o
+*.pbxuser
+*.xcbkptlist
+*.xcuserstate
+
+#but do not ignore these files
+!.gitignore
