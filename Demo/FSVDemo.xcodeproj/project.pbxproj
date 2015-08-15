@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A031CF71B7F1E2F00B8DDF0 /* libFlexibleSlidingView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A031CF61B7F1E2F00B8DDF0 /* libFlexibleSlidingView.a */; };
+		3A031D0A1B7F1F4B00B8DDF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031CFA1B7F1F4B00B8DDF0 /* AppDelegate.m */; };
+		3A031D0B1B7F1F4B00B8DDF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A031CFB1B7F1F4B00B8DDF0 /* LaunchScreen.xib */; };
+		3A031D0C1B7F1F4B00B8DDF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A031CFD1B7F1F4B00B8DDF0 /* Images.xcassets */; };
+		3A031D0E1B7F1F4B00B8DDF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031CFF1B7F1F4B00B8DDF0 /* main.m */; };
+		3A031D0F1B7F1F4B00B8DDF0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031D011B7F1F4B00B8DDF0 /* MainViewController.m */; };
+		3A031D101B7F1F4B00B8DDF0 /* ParameterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031D031B7F1F4B00B8DDF0 /* ParameterTableViewController.m */; };
+		3A031D111B7F1F4B00B8DDF0 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031D051B7F1F4B00B8DDF0 /* SimpleViewController.m */; };
+		3A031D121B7F1F4B00B8DDF0 /* SwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031D071B7F1F4B00B8DDF0 /* SwitchTableViewCell.m */; };
+		3A031D131B7F1F4B00B8DDF0 /* TextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A031D091B7F1F4B00B8DDF0 /* TextFieldTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A031CF61B7F1E2F00B8DDF0 /* libFlexibleSlidingView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlexibleSlidingView.a; path = "../Library/build/Debug-iphoneos/libFlexibleSlidingView.a"; sourceTree = "<group>"; };
+		3A031CF91B7F1F4B00B8DDF0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A031CFA1B7F1F4B00B8DDF0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A031CFC1B7F1F4B00B8DDF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3A031CFD1B7F1F4B00B8DDF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A031CFE1B7F1F4B00B8DDF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A031CFF1B7F1F4B00B8DDF0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A031D001B7F1F4B00B8DDF0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3A031D011B7F1F4B00B8DDF0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3A031D021B7F1F4B00B8DDF0 /* ParameterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterTableViewController.h; sourceTree = "<group>"; };
+		3A031D031B7F1F4B00B8DDF0 /* ParameterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParameterTableViewController.m; sourceTree = "<group>"; };
+		3A031D041B7F1F4B00B8DDF0 /* SimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
+		3A031D051B7F1F4B00B8DDF0 /* SimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
+		3A031D061B7F1F4B00B8DDF0 /* SwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableViewCell.h; sourceTree = "<group>"; };
+		3A031D071B7F1F4B00B8DDF0 /* SwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTableViewCell.m; sourceTree = "<group>"; };
+		3A031D081B7F1F4B00B8DDF0 /* TextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldTableViewCell.h; sourceTree = "<group>"; };
+		3A031D091B7F1F4B00B8DDF0 /* TextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldTableViewCell.m; sourceTree = "<group>"; };
+		3A2F3FB11B75448B00FF3FE9 /* FSVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A2F3FAE1B75448B00FF3FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A031CF71B7F1E2F00B8DDF0 /* libFlexibleSlidingView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A031CF81B7F1F4B00B8DDF0 /* FlexibleSlidingViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3A031CF91B7F1F4B00B8DDF0 /* AppDelegate.h */,
+				3A031CFA1B7F1F4B00B8DDF0 /* AppDelegate.m */,
+				3A031CFF1B7F1F4B00B8DDF0 /* main.m */,
+				3A031D001B7F1F4B00B8DDF0 /* MainViewController.h */,
+				3A031D011B7F1F4B00B8DDF0 /* MainViewController.m */,
+				3A031D021B7F1F4B00B8DDF0 /* ParameterTableViewController.h */,
+				3A031D031B7F1F4B00B8DDF0 /* ParameterTableViewController.m */,
+				3A031D041B7F1F4B00B8DDF0 /* SimpleViewController.h */,
+				3A031D051B7F1F4B00B8DDF0 /* SimpleViewController.m */,
+				3A031D061B7F1F4B00B8DDF0 /* SwitchTableViewCell.h */,
+				3A031D071B7F1F4B00B8DDF0 /* SwitchTableViewCell.m */,
+				3A031D081B7F1F4B00B8DDF0 /* TextFieldTableViewCell.h */,
+				3A031D091B7F1F4B00B8DDF0 /* TextFieldTableViewCell.m */,
+			);
+			path = FlexibleSlidingViewDemo;
+			sourceTree = "<group>";
+		};
+		3A031D251B7F221900B8DDF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A031CFB1B7F1F4B00B8DDF0 /* LaunchScreen.xib */,
+				3A031CFD1B7F1F4B00B8DDF0 /* Images.xcassets */,
+				3A031CFE1B7F1F4B00B8DDF0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = FlexibleSlidingViewDemo;
+			sourceTree = "<group>";
+		};
+		3A2F3FA81B75448B00FF3FE9 = {
+			isa = PBXGroup;
+			children = (
+				3A031CF81B7F1F4B00B8DDF0 /* FlexibleSlidingViewDemo */,
+				3A2F3FDC1B75453900FF3FE9 /* Frameworks & libraries */,
+				3A2F3FB21B75448B00FF3FE9 /* Products */,
+				3A031D251B7F221900B8DDF0 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3A2F3FB21B75448B00FF3FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A2F3FB11B75448B00FF3FE9 /* FSVDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A2F3FDC1B75453900FF3FE9 /* Frameworks & libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3A031CF61B7F1E2F00B8DDF0 /* libFlexibleSlidingView.a */,
+			);
+			name = "Frameworks & libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A2F3FB01B75448B00FF3FE9 /* FSVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2F3FD41B75448B00FF3FE9 /* Build configuration list for PBXNativeTarget "FSVDemo" */;
+			buildPhases = (
+				3A2F3FAD1B75448B00FF3FE9 /* Sources */,
+				3A2F3FAE1B75448B00FF3FE9 /* Frameworks */,
+				3A2F3FAF1B75448B00FF3FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSVDemo;
+			productName = SWSlidingViewControllerDemo;
+			productReference = 3A2F3FB11B75448B00FF3FE9 /* FSVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A2F3FA91B75448B00FF3FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = skywind;
+				TargetAttributes = {
+					3A2F3FB01B75448B00FF3FE9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 3A2F3FAC1B75448B00FF3FE9 /* Build configuration list for PBXProject "FSVDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A2F3FA81B75448B00FF3FE9;
+			productRefGroup = 3A2F3FB21B75448B00FF3FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A2F3FB01B75448B00FF3FE9 /* FSVDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A2F3FAF1B75448B00FF3FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A031D0B1B7F1F4B00B8DDF0 /* LaunchScreen.xib in Resources */,
+				3A031D0C1B7F1F4B00B8DDF0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A2F3FAD1B75448B00FF3FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A031D131B7F1F4B00B8DDF0 /* TextFieldTableViewCell.m in Sources */,
+				3A031D111B7F1F4B00B8DDF0 /* SimpleViewController.m in Sources */,
+				3A031D121B7F1F4B00B8DDF0 /* SwitchTableViewCell.m in Sources */,
+				3A031D0E1B7F1F4B00B8DDF0 /* main.m in Sources */,
+				3A031D101B7F1F4B00B8DDF0 /* ParameterTableViewController.m in Sources */,
+				3A031D0F1B7F1F4B00B8DDF0 /* MainViewController.m in Sources */,
+				3A031D0A1B7F1F4B00B8DDF0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A031CFB1B7F1F4B00B8DDF0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A031CFC1B7F1F4B00B8DDF0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A2F3FD21B75448B00FF3FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../Library;
+			};
+			name = Debug;
+		};
+		3A2F3FD31B75448B00FF3FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../Library;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A2F3FD51B75448B00FF3FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlexibleSlidingViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = FSVDemo;
+			};
+			name = Debug;
+		};
+		3A2F3FD61B75448B00FF3FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlexibleSlidingViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = FSVDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A2F3FAC1B75448B00FF3FE9 /* Build configuration list for PBXProject "FSVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2F3FD21B75448B00FF3FE9 /* Debug */,
+				3A2F3FD31B75448B00FF3FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A2F3FD41B75448B00FF3FE9 /* Build configuration list for PBXNativeTarget "FSVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2F3FD51B75448B00FF3FE9 /* Debug */,
+				3A2F3FD61B75448B00FF3FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A2F3FA91B75448B00FF3FE9 /* Project object */;
+}
