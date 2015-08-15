@@ -5,8 +5,6 @@ Docs/html/
 xcuserdata/
 xcuserdatad/
 .svn/
-xcuserdata/
-xcuserdatad/
 
 #ignore the following files:
 .*
