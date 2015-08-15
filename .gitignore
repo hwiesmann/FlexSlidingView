@@ -14,6 +14,7 @@ xcuserdatad/
 *.o
 *.pbxuser
 *.xcbkptlist
+*.xccheckout
 *.xcuserstate
 
 #but do not ignore these files
