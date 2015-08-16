@@ -188,7 +188,7 @@ static NSString* kCellIDTextField = @"CellIDTextField";
 						
 						UITextField* textFieldView = [textFieldCell textField];
 						
-						[textFieldCell setTextLabelWidth:180.0];
+						[textFieldCell setTextLabelWidth:250.0];
 						[[textFieldCell textLabel] setText:@"Relative dimension (1-15)"];
 						[textFieldView setDelegate:self];
 						[textFieldView setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
