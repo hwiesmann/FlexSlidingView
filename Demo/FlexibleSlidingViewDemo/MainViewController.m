@@ -57,18 +57,15 @@
 {
 	ParameterTableViewController* parameterTableViewController = [[ParameterTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
 	
-	UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:parameterTableViewController];
-	
-	
-	[parameterTableViewController setTitle:@"Parameters"];
-	[navigationController setModalPresentationStyle:UIModalPresentationPopover];
-	[self presentViewController:navigationController animated:YES completion:nil];
-	
-	UIPopoverPresentationController* popoverPresentationController = [navigationController popoverPresentationController];
+	[parameterTableViewController setModalPresentationStyle:UIModalPresentationPopover];
 
+	UIPopoverPresentationController* popoverPresentationController = [parameterTableViewController popoverPresentationController];
+	
 	[popoverPresentationController setBarButtonItem:sender];
 	[popoverPresentationController setDelegate:self];
 	[popoverPresentationController setPassthroughViews:nil];
+
+	[self presentViewController:parameterTableViewController animated:YES completion:nil];
 }
 
 -(void) notificationUserDefaultsChanged:(NSNotification*)notification
