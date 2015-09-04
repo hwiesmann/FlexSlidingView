@@ -81,6 +81,13 @@
    * @param absoluteXDimension Absolute x-dimension of the sliding view.
 	 * @param absoluteYDimension Absolute y-dimension of the sliding view. */
 	-(void) setUpDarkeningForAbsoluteXDimension:(CGFloat)absoluteXDimension absoluteYDimension:(CGFloat)absoluteYDimension;
+ /// Sets up user interaction possibility for the sandwich view
+ /** This method enables user interaction with the sandwich view if
+	 *  - a sliding view exists and
+	 *  - one of the parameters is larger than its minimum absolute dimension.
+   * @param absoluteXDimension Absolute x-dimension of the sliding view.
+	 * @param absoluteYDimension Absolute y-dimension of the sliding view. */
+	-(void) setUpUserInteractionFeasibilityForAbsoluteXDimension:(CGFloat)absoluteXDimension absoluteYDimension:(CGFloat)absoluteYDimension;
 
 /** @} */
 @end
@@ -123,6 +130,7 @@
 	[self setSandwichView:[FSVSandwichView new]];
 	[[self sandwichView] setBackgroundColor:[UIColor colorWithWhite:0.0 alpha:[self darkening]]];
 	[[self sandwichView] setTranslatesAutoresizingMaskIntoConstraints:NO];
+	[[self sandwichView] setUserInteractionEnabled:NO];
 	if ([self allowTapMinimization])
 	{
 		[self setMinimizingGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTapping:)]];
@@ -130,6 +138,7 @@
 		[[self sandwichView] addGestureRecognizer:[self minimizingGestureRecognizer]];
 	} /* if */
 	[[self view] addSubview:[self sandwichView]];
+
 	[[self view] addConstraint:[NSLayoutConstraint constraintWithItem:[self view]
 																													attribute:NSLayoutAttributeCenterX
 																													relatedBy:NSLayoutRelationEqual
@@ -158,6 +167,7 @@
 																													attribute:NSLayoutAttributeWidth
 																												 multiplier:1.0
 																													 constant:0.0]];
+
 	[self setStretchView:[UIView new]];
 	[[self stretchView] setBackgroundColor:[UIColor clearColor]];
 	[[self view] insertSubview:[self stretchView] atIndex:0];
@@ -242,6 +252,7 @@
 	if ([self determineAbsoluteXDimension] < [self determineAbsoluteMinXDimension])
 		[self modifyStretchViewConstraintsForXDimension:[_minXDimension dimension] absoluteValue:[_minXDimension absoluteDimension]];
 	[self setUpDarkeningForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
+	[self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
 }
 
 -(void) setMinYDimension:(FSVDimension*)minYDimension
@@ -250,6 +261,7 @@
 	if ([self determineAbsoluteYDimension] < [self determineAbsoluteMinYDimension])
 		[self modifyStretchViewConstraintsForYDimension:[_minYDimension dimension] absoluteValue:[_minYDimension absoluteDimension]];
 	[self setUpDarkeningForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
+	[self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
 }
 
 -(void) setSlidingResizes:(BOOL)slidingResizes
@@ -344,13 +356,13 @@
 
 	[self modifyStretchViewConstraintsForXDimension:newAbsoluteXDimension absoluteValue:YES];
 	[self modifyStretchViewConstraintsForYDimension:newAbsoluteYDimension absoluteValue:YES];
-	if (animated)
-		[UIView animateWithDuration:[self animationDuration]
-										 animations:
-		 ^{
-			 [[self view] layoutIfNeeded];
-			 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
-		 }];
+	[UIView animateWithDuration:animated ? [self animationDuration] : 0.0
+									 animations:
+	 ^{
+		 [[self view] layoutIfNeeded];
+		 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
+		 [self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
+	 }];
 }
 
 -(void) minimizeSlidingViewAnimated:(BOOL)animated
@@ -363,13 +375,13 @@
 	
 	[self modifyStretchViewConstraintsForXDimension:newAbsoluteXDimension absoluteValue:YES];
 	[self modifyStretchViewConstraintsForYDimension:newAbsoluteYDimension absoluteValue:YES];
-	if (animated)
-		[UIView animateWithDuration:[self animationDuration]
-										 animations:
-		 ^{
-			 [[self view] layoutIfNeeded];
-			 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
-		 }];
+	[UIView animateWithDuration:animated ? [self animationDuration] : 0.0
+									 animations:
+	 ^{
+		 [[self view] layoutIfNeeded];
+		 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
+		 [self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
+	 }];
 }
 
 -(void) setDimensionForX:(FSVDimension*)x y:(FSVDimension*)y animated:(BOOL)animated
@@ -404,6 +416,7 @@
 		 ^{
 			 [[self view] layoutIfNeeded];
 			 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
+			 [self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
 		 }];
 }
 
@@ -446,6 +459,7 @@
 					 ^{
 						 [[self view] layoutIfNeeded];
 						 [self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
+						 [self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
 					 }];
 				} /* if */
 		    break;
@@ -473,6 +487,7 @@
 					[self modifyStretchViewConstraintsForXDimension:newAbsoluteXDimension absoluteValue:YES];
 					[self modifyStretchViewConstraintsForYDimension:newAbsoluteYDimension absoluteValue:YES];
 					[self setUpDarkeningForAbsoluteXDimension:newAbsoluteXDimension absoluteYDimension:newAbsoluteYDimension];
+					[self setUpUserInteractionFeasibilityForAbsoluteXDimension:[self determineAbsoluteXDimension] absoluteYDimension:[self determineAbsoluteYDimension]];
 				} /* block */
 				break;
 			default:
@@ -933,6 +948,11 @@
 		targetColor = [UIColor clearColor];
 	if (![[[self sandwichView] backgroundColor] isEqual:targetColor])
 		[[self sandwichView] setBackgroundColor:targetColor];
+}
+
+-(void) setUpUserInteractionFeasibilityForAbsoluteXDimension:(CGFloat)absoluteXDimension absoluteYDimension:(CGFloat)absoluteYDimension
+{
+	[[self sandwichView] setUserInteractionEnabled:(([[self slidingViewController] view] != nil) && ((absoluteXDimension > [self determineAbsoluteMinXDimension]) || (absoluteYDimension > [self determineAbsoluteMinYDimension])))];
 }
 
 @end
