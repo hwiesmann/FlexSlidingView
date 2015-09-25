@@ -24,7 +24,7 @@
 	@property (nonatomic, assign) CGFloat         darkening;              ///< Value within [0; 1] that dims the main window when being in overlay mode and the sliding view has not its minimum dimension; default value is zero (no darkening)
 	@property (nonatomic, assign) CGFloat         xSnapBorder;            ///< If the current sliding view's x-dimension is larger than xSnapBorder*maxAbsoluteXDimension+(1-xSnapBorder)*minAbsoluteXDimension the sliding view will snap to the maximum otherwise to the minimum x-limit; the default setting is 0.5
 	@property (nonatomic, assign) CGFloat         ySnapBorder;            ///< If the current sliding view's y-dimension is larger than ySnapBorder*maxAbsoluteYDimension+(1-ySnapBorder)*minAbsoluteYDimension the sliding view will snap to the maximum otherwise to the minimum y-limit; the default setting is 0.5
-	@property (nonatomic, assign) NSInteger       slidingViewPositioning; ///< Position of the sliding view relative to the container's view
+	@property (nonatomic, assign) NSInteger       slidingViewPositioning; ///< Position of the sliding view relative to the container's view; default value is FSVRelativePositioningBottom
 	@property (nonatomic, assign) NSTimeInterval  animationDuration;      ///< Duration of the maximization, minimization or snapping operation in seconds; default value is 0.25
 	@property (nonatomic, assign) FSVSlidingStyle slidingStyle;           ///< Sliding style; default value is FSVSlidingStyleMove
 
