@@ -942,7 +942,8 @@
 	UIColor* targetColor;
 
 
-	if (([[self slidingViewController] view] != nil) && ([self slidingStyle] == FSVSlidingStyleOverlay) && ((absoluteXDimension > [self determineAbsoluteMinXDimension]) || (absoluteYDimension > [self determineAbsoluteMinYDimension])))
+	if (([[self slidingViewController] view] != nil) && ([self slidingStyle] == FSVSlidingStyleOverlay) &&
+			((absoluteXDimension- [self determineAbsoluteMinXDimension] > 1.0) || (absoluteYDimension-[self determineAbsoluteMinYDimension] > 1.0))) // comparison against 1 takes rounding errors and rounding to pixels into account
 		targetColor = [UIColor colorWithWhite:0.0 alpha:[self darkening]];
 	else
 		targetColor = [UIColor clearColor];
@@ -952,7 +953,8 @@
 
 -(void) setUpUserInteractionFeasibilityForAbsoluteXDimension:(CGFloat)absoluteXDimension absoluteYDimension:(CGFloat)absoluteYDimension
 {
-	[[self sandwichView] setUserInteractionEnabled:(([[self slidingViewController] view] != nil) && ((absoluteXDimension > [self determineAbsoluteMinXDimension]) || (absoluteYDimension > [self determineAbsoluteMinYDimension])))];
+	[[self sandwichView] setUserInteractionEnabled:(([[self slidingViewController] view] != nil) &&
+																									((absoluteXDimension-[self determineAbsoluteMinXDimension] > 1.0) || (absoluteYDimension-[self determineAbsoluteMinYDimension] > 1.0)))]; // comparison against 1 takes rounding errors and rounding to pixels into account
 }
 
 @end
