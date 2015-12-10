@@ -189,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SW;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = skywind;
 				TargetAttributes = {
 					3A2F3F2D1B753FB300FF3FE9 = {
@@ -278,6 +278,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,7 +297,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = .;
 			};
@@ -374,6 +375,7 @@
 				);
 				INFOPLIST_FILE = FlexibleSlidingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.skywind.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FlexibleSlidingViewTests;
 			};
 			name = Debug;
@@ -388,6 +390,7 @@
 				);
 				INFOPLIST_FILE = FlexibleSlidingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.skywind.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FlexibleSlidingViewTests;
 			};
 			name = Release;
@@ -451,6 +454,7 @@
 				);
 				INFOPLIST_FILE = FlexibleSlidingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.skywind.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FlexibleSlidingViewTests;
 			};
 			name = AdHocDistribution;
@@ -514,6 +518,7 @@
 				);
 				INFOPLIST_FILE = FlexibleSlidingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.skywind.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FlexibleSlidingViewTests;
 			};
 			name = Distribution;
