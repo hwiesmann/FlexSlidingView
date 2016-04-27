@@ -189,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SW;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = skywind;
 				TargetAttributes = {
 					3A2F3F2D1B753FB300FF3FE9 = {
@@ -297,7 +297,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = .;
 			};
