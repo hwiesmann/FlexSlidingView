@@ -116,7 +116,11 @@
 				3A2F3F3D1B753FB300FF3FE9 /* FSWTests */,
 				3A2F3F2F1B753FB300FF3FE9 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		3A2F3F2F1B753FB300FF3FE9 /* Products */ = {
 			isa = PBXGroup;
