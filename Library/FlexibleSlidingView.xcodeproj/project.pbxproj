@@ -193,7 +193,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SW;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = skywind;
 				TargetAttributes = {
 					3A2F3F2D1B753FB300FF3FE9 = {
@@ -209,7 +209,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				Base,
 			);
 			mainGroup = 3A2F3F251B753FB300FF3FE9;
 			productRefGroup = 3A2F3F2F1B753FB300FF3FE9 /* Products */;
