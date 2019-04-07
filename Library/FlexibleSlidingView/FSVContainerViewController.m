@@ -767,7 +767,7 @@
 				[[self stretchViewConstraints] addObject:[NSLayoutConstraint constraintWithItem:stretchView
 																																							attribute:NSLayoutAttributeWidth
 																																							relatedBy:NSLayoutRelationEqual
-																																								 toItem:[self view]
+																																								 toItem:nil
 																																							attribute:NSLayoutAttributeNotAnAttribute
 																																						 multiplier:0.0
 																																							 constant:[[self minXDimension] dimension]]];
@@ -810,7 +810,7 @@
 				[[self stretchViewConstraints] addObject:[NSLayoutConstraint constraintWithItem:stretchView
 																																							attribute:NSLayoutAttributeHeight
 																																							relatedBy:NSLayoutRelationEqual
-																																								 toItem:[self view]
+																																								 toItem:nil
 																																							attribute:NSLayoutAttributeNotAnAttribute
 																																						 multiplier:0.0
 																																							 constant:[[self minYDimension] dimension]]];
