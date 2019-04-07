@@ -16,7 +16,7 @@
 ///  - darkening the main's view by changing its transparency;
 ///  - detecting tap gestures for minimizing the sliding view.
 ///
-/// @remark The default setting is a completely transparent and does not have any darkening nor tap gesture functionality.
+/// @remark The default setting is a completely transparent view and does not have any darkening nor tap gesture functionality.
 ///
 @interface FSVSandwichView : UIView
 

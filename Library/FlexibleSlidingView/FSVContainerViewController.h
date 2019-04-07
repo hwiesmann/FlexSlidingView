@@ -12,6 +12,30 @@
 
 @class FSVDimension;
 
+///
+/// @class FSVContainerViewController
+/// @brief A flexible sliding controller contains two controllers, a main and a sliding controller, where the view of the sliding controller can slide
+///        onto or can push away the main controller's view.
+///
+/// The main controller's view normally contains the main data. The sliding controller's view is mostly used to show either temporary or auxiliary data.
+/// When the sliding controller's data is to be shown its view can either slide onto the main controller's view or can push out or squeeze the size of
+/// the main controller's view. The sliding style together with the sliding resizing flag determine which of the methods is used.
+///
+/// The sliding controller's view can slide in from all possible directions (right, left, top or bottom). The sliding operation can always be done
+/// programmatically or can be initiated by the user. As a default user controlled sliding is enabled.
+///
+/// The minimum and maximum size of the sliding view in the sliding direction can be parameterized, too. Furthermore, in case of a user initiated sliding
+/// the sliding operation can either snap to the maximum or minimum value in the sliding direction. If the sliding view snaps to the maximum or minimum
+/// value is influenced by the parameter xSnapBorder, respectively ySnapBorder. This snapping operation has to be enabled explicitely as it is deactivated
+/// by default.
+///
+/// If the sliding controller's view and the main controller's view are visible the sliding view may be minimized by the user when tapping outside the
+/// sliding view. This behaviour can be enabled by the flag allowTapMinimization.
+///
+/// In case the sliding view is larger than its minimum size and sliding view moves on top of the main controller's view a flag can be set to darken the
+/// main controller's view by a given transparency factor. A factor of zero does not darken the main controller's view while a factor of zero blackens it
+/// completely.
+///
 @interface FSVContainerViewController : UIViewController <UIGestureRecognizerDelegate>
 
 /** @name Properties
@@ -42,13 +66,13 @@
  /// Returns the x-dimension of the sliding view
  /** @param absoluteDimension Flag indicating if an absolute or relative dimension should be returned.
 	 * @return                  The dimension of the sliding view is returned.
-   * @note If the container view's width is zero a relative dimension should be returned a relative
+   * @note If the container view's width is zero and a relative dimension should be returned a relative
    *       dimension of zero is returned. */
 	-(FSVDimension*) xDimensionOfSlidingViewWithAbsoluteValue:(BOOL)absoluteDimension;
  /// Returns the y-dimension of the sliding view
  /** @param absoluteDimension Flag indicating if an absolute or relative dimension should be returned.
 	 * @return                  The dimension of the sliding view is returned.
-   * @note If the container view's height is zero a relative dimension should be returned a relative
+   * @note If the container view's height is zero and a relative dimension should be returned a relative
    *       dimension of zero is returned. */
 	-(FSVDimension*) yDimensionOfSlidingViewWithAbsoluteValue:(BOOL)absoluteDimension;
 
